@@ -23,3 +23,28 @@
     src: url(../fonts/static/Sen-ExtraBold.ttf);
     font-weight: 800;
 }
+
+* { 
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Sen;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+img{
+    display: block;
+}
+button {
+    border: none;
+    background-color: transparent;
+}
+input {
+    outline: none;
+    border: none;
+}
