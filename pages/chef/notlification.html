@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH2N2F2Z5A6T7X4m5i6J/pRHd8b1F4/hT8h5y+rTBQ2yC6m1K9HElWc5cKk7g+4dQKP3Z9Fg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Notifications</title>
+    <style>
+        body {
+            background-color: #f8f8f8;
+        }
+        .active-tab {
+            border-bottom: 2px solid #ff6b00;
+        }
+        .notification-text {
+            color: #707070;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <div class="flex items-center justify-between px-4 py-2 bg-white shadow-md">
+        <button>
+            <svg class="w-6 h-6 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11h2v2h-2V7zm0 4h2v6h-2v-6z" clip-rule="evenodd"></path>
+            </svg>
+        </button>
+        <h1 class="text-xl font-semibold">Notifications</h1>
+        <div class="w-6 h-6"></div>
+    </div>
+    
+    <!-- Tabs -->
+    <div class="flex justify-between bg-white shadow-md px-4">
+        <button class="py-2 active-tab text-orange-600 font-semibold">Notifications</button>
+        <button class="py-2 text-gray-500">Messages (3)</button>
+    </div>
+    
+    <!-- Notification List -->
+    <div class="flex-1 overflow-y-auto p-4">
+        <div class="space-y-4">
+            <div class="flex items-center space-x-4 bg-white p-4 rounded-md shadow">
+                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                <div class="flex-1">
+                    <div class="font-semibold">Tanbir Ahmed <span class="notification-text">Placed a new order</span></div>
+                    <div class="text-gray-400 text-sm">20 min ago</div>
+                </div>
+                <div class="w-8 h-8 bg-gray-300 rounded-md"></div>
+            </div>
+            <div class="flex items-center space-x-4 bg-white p-4 rounded-md shadow">
+                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                <div class="flex-1">
+                    <div class="font-semibold">Salim Smith <span class="notification-text">left a 5 star review</span></div>
+                    <div class="text-gray-400 text-sm">20 min ago</div>
+                </div>
+                <div class="w-8 h-8 bg-gray-300 rounded-md"></div>
+            </div>
+            <div class="flex items-center space-x-4 bg-white p-4 rounded-md shadow">
+                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                <div class="flex-1">
+                    <div class="font-semibold">Royal Bengol <span class="notification-text">agreed to cancel</span></div>
+                    <div class="text-gray-400 text-sm">20 min ago</div>
+                </div>
+                <div class="w-8 h-8 bg-gray-300 rounded-md"></div>
+            </div>
+            <div class="flex items-center space-x-4 bg-white p-4 rounded-md shadow">
+                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                <div class="flex-1">
+                    <div class="font-semibold">Pabel Vuiya <span class="notification-text">Placed a new order</span></div>
+                    <div class="text-gray-400 text-sm">20 min ago</div>
+                </div>
+                <div class="w-8 h-8 bg-gray-300 rounded-md"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="flex justify-around p-4 border-t">
+        <button class="text-orange-500">
+            <a href="chef.html">
+            <i class="fas fa-th-large"></i>
+            </a>
+        </button>
+        <button class="text-gray-500">
+            <a href="list.html">
+            <i class="fas fa-bars"></i>
+
+            </a>
+        </button>
+        <button class="text-orange-500 relative">
+            <a href="add.html">
+                <span class="absolute inset-0 flex items-center justify-center">
+                    <i class="fas fa-plus"></i>
+                </span>
+            </a>
+            <span class="block w-12 h-12 rounded-full border-4 border-orange-500"></span>
+        </button>
+        <button class="text-gray-500">
+            <a href="notlification.html">
+            <i class="fas fa-heart"></i>
+
+            </a>
+        </button>
+        <button class="text-gray-500">
+            <i class="fas fa-user"></i>
+        </button>
+    </div>
+    
+</body>
+</html>
